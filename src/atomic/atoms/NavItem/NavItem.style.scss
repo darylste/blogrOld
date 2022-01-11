@@ -1,0 +1,15 @@
+@import '../../../style/variables.scss';
+
+.nav-item {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 500;
+	text-decoration: none;
+	color: $color-white;
+	opacity: 0.75;
+
+	&:hover {
+		opacity: 1;
+		text-decoration: underline;
+	}
+}

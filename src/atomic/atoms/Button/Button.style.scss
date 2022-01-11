@@ -1,0 +1,47 @@
+@import '../../../style/variables.scss';
+
+.btn {
+	font-size: 1.6rem;
+	font-weight: 700;
+
+	border: none;
+	border-radius: 3rem;
+	padding: 1.5rem 4rem;
+	cursor: pointer;
+
+	&Primary {
+		color: $color-red;
+		background-color: $color-white;
+
+		&:hover {
+			color: $color-white;
+			background-color: $color-red-light;
+		}
+	}
+
+	&Secondary {
+		color: $color-white;
+		background: transparent;
+		opacity: 0.75;
+
+		&:hover {
+			opacity: 1;
+			text-decoration: underline;
+		}
+	}
+
+	&Outline {
+		color: $color-white;
+		background-color: transparent;
+		border: 1px solid $color-white;
+
+		&:hover {
+			color: $color-red;
+			background-color: $color-white;
+		}
+	}
+
+	&Small {
+		padding: 1.5rem 2.5rem;
+	}
+}

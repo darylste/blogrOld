@@ -1,0 +1,73 @@
+@import '../../../style/variables.scss';
+
+.top {
+	&Xs {
+		padding: $padding-xs;
+	}
+	&Sm {
+		padding-top: $padding-sm;
+	}
+	&Med {
+		padding-top: $padding-med;
+	}
+	&Lg {
+		padding-top: $padding-lg;
+	}
+	&Xl {
+		padding-top: $padding-xl;
+	}
+}
+
+.right {
+	&Xs {
+		padding-right: $padding-xs;
+	}
+	&Sm {
+		padding-right: $padding-sm;
+	}
+	&Med {
+		padding-right: $padding-med;
+	}
+	&Lg {
+		padding-right: $padding-lg;
+	}
+	&Xl {
+		padding-right: $padding-xl;
+	}
+}
+
+.btm {
+	&Xs {
+		padding-bottom: $padding-xs;
+	}
+	&Sm {
+		padding-bottom: $padding-sm;
+	}
+	&Med {
+		padding-bottom: $padding-med;
+	}
+	&Lg {
+		padding-bottom: $padding-lg;
+	}
+	&Xl {
+		padding-bottom: $padding-xl;
+	}
+}
+
+.left {
+	&Xs {
+		padding-left: $padding-xs;
+	}
+	&Sm {
+		padding-left: $padding-sm;
+	}
+	&Med {
+		padding-left: $padding-med;
+	}
+	&Lg {
+		padding-left: $padding-lg;
+	}
+	&Xl {
+		padding-left: $padding-xl;
+	}
+}

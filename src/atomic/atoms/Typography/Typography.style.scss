@@ -1,0 +1,15 @@
+@import '../../../style/variables.scss';
+
+.hero {
+	color: $color-white;
+
+	&Title {
+		font-size: 6.4rem;
+		font-weight: 600;
+	}
+
+	&Text {
+		font-size: 2rem;
+		font-weight: 400;
+	}
+}

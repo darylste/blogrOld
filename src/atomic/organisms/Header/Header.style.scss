@@ -1,0 +1,13 @@
+.header {
+	// height: 70vh;
+	background: linear-gradient(
+			74deg,
+			rgba(255, 143, 112, 0.95) 0%,
+			rgba(255, 61, 84, 0.95) 100%
+		),
+		url('../../../../public/images/bg-pattern-intro-desktop.svg');
+	background-size: 170%;
+	background-repeat: no-repeat;
+	background-position: 10% 50%;
+	border-radius: 0 0 0 10rem;
+}
