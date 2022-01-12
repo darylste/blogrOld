@@ -1,9 +1,16 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import './Container.style.scss';
 
-const Container = (props) => {
-	return <div className='container'>{props.children}</div>;
+const Container = ({ className, alignment = 'center', children }) => {
+	return (
+		<div
+			className={classNames('container', className, `container-${alignment}`)}
+		>
+			{children}
+		</div>
+	);
 };
 
 export default Container;

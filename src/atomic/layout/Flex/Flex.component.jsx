@@ -11,7 +11,9 @@ const Flex = (props) => {
 				justifyCenter: props.justifyCenter,
 				justifyBetween: props.justifyBetween,
 				justifyAround: props.justifyAround,
+				justifyEnd: props.justifyEnd,
 				alignCenter: props.alignCenter,
+				alignEnd: props.alignEnd,
 			})}
 		>
 			{props.children}

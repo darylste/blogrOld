@@ -17,19 +17,19 @@ const Spacer = (props) => {
 				rightSm: props.right === 'sm',
 				rightMed: props.right === 'med',
 				rightLg: props.right === 'lg',
-				rightXl: props.top === 'xl',
+				rightXl: props.right === 'xl',
 
 				btmXs: props.btm === 'xs',
 				btmSm: props.btm === 'sm',
 				btmMed: props.btm === 'med',
 				btmLg: props.btm === 'lg',
-				btmXl: props.top === 'xl',
+				btmXl: props.btm === 'xl',
 
 				leftXs: props.left === 'xs',
 				leftSm: props.left === 'sm',
 				leftMed: props.left === 'med',
 				leftLg: props.left === 'lg',
-				leftXl: props.top === 'xl',
+				leftXl: props.left === 'xl',
 			})}
 		>
 			{props.children}

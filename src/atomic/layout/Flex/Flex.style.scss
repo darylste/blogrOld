@@ -14,6 +14,14 @@
 	justify-content: space-around;
 }
 
+.justifyEnd {
+	justify-content: flex-end;
+}
+
 .alignCenter {
 	align-items: center;
+}
+
+.alignEnd {
+	align-items: flex-end;
 }
