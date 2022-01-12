@@ -1,0 +1,11 @@
+@import '../../../style/variables.scss';
+
+.feature-section {
+	height: 40rem;
+	background: url(../../../../public/images/bg-pattern-circles.svg),
+		linear-gradient(0deg, $color-blue, $color-blue-black);
+	background-repeat: no-repeat;
+	background-position: -10% 75%;
+
+	border-radius: 0 10rem 0 10rem;
+}
