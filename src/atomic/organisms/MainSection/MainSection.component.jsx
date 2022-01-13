@@ -12,7 +12,9 @@ const MainSection = () => {
 			<Spacer top='sm' btm='sm'>
 				<Container className='main-section' alignment='right'>
 					<Spacer top='lg' btm='lg'>
-						<Typography type='title'>Designed for the future</Typography>
+						<Typography type='title' alignment='center'>
+							Designed for the future
+						</Typography>
 					</Spacer>
 					<Grid cols='2'>
 						<div>

@@ -1,6 +1,7 @@
 @import '../../../style/variables.scss';
 
 .feature-section {
+	position: relative;
 	height: 40rem;
 	background: url(../../../../public/images/bg-pattern-circles.svg),
 		linear-gradient(0deg, $color-blue, $color-blue-black);
@@ -8,4 +9,9 @@
 	background-position: -10% 75%;
 
 	border-radius: 0 10rem 0 10rem;
+}
+
+.phone-img {
+	position: absolute;
+	top: -65px;
 }

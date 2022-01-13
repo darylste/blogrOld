@@ -9,9 +9,11 @@ import './Hero.style.scss';
 const Hero = () => {
 	return (
 		<div className='hero'>
-			<Typography type='hero-title'>A modern publishing platform</Typography>
+			<Typography type='hero-title' alignment='center'>
+				A modern publishing platform
+			</Typography>
 			<Spacer top='sm' btm='sm'>
-				<Typography type='hero-text'>
+				<Typography type='hero-text' alignment='center'>
 					Grow your audience and build your online brand
 				</Typography>
 			</Spacer>

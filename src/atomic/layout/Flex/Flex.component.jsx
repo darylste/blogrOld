@@ -14,6 +14,7 @@ const Flex = (props) => {
 				justifyEnd: props.justifyEnd,
 				alignCenter: props.alignCenter,
 				alignEnd: props.alignEnd,
+				flexColumn: props.flexColumn,
 			})}
 		>
 			{props.children}
