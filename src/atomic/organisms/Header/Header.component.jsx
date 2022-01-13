@@ -19,7 +19,7 @@ const Header = () => {
 						<Spacer right='lg'>
 							<Logo />
 						</Spacer>
-						<Nav />
+						<Nav labels={['Product', 'Company', 'Connect']} />
 					</Flex>
 					<Flex alignCenter>
 						<Button text='Login' type='secondary' />

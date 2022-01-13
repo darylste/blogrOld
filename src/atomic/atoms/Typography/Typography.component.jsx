@@ -53,6 +53,8 @@ const Typography = ({ type, color = 'blue', alignment = 'left', children }) => {
 					{children}
 				</p>
 			);
+		case 'footer-title':
+			return <p className='footer-title'>{children}</p>;
 		default:
 			return null;
 	}

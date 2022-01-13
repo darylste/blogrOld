@@ -26,6 +26,13 @@
 	line-height: 2.8rem;
 }
 
+.footer-title {
+	color: $color-white;
+	font-family: $font-secondary;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
 .text {
 	&-blue {
 		color: $color-blue;

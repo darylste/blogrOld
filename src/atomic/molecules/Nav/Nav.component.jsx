@@ -1,14 +1,18 @@
 import React from 'react';
-
+import Link from '../../atoms/Link/Link.component';
 import './Nav.style.scss';
-import NavItem from '../../atoms/NavItem/NavItem.component';
 
 const Nav = () => {
 	return (
 		<ul className='nav'>
-			<NavItem text='Product' />
-			<NavItem text='Company' />
-			<NavItem text='Connect' />
+			{/* {labels.forEach((element) => {
+				<Link text={element} varient='nav-item' />;
+				console.log(element);
+			})} */}
+
+			<Link text='Product' varient='nav' />
+			<Link text='Company' varient='nav' />
+			<Link text='Connect' varient='nav' />
 		</ul>
 	);
 };
