@@ -13,4 +13,9 @@
 	&-4 {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	&Reversed {
+		grid-auto-flow: dense;
+		direction: rtl;
+	}
 }

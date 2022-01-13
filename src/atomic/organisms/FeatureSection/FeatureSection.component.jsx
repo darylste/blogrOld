@@ -5,6 +5,7 @@ import Grid from '../../layout/Grid/Grid.component';
 import Typography from '../../atoms/Typography/Typography.component';
 import Spacer from '../../layout/Spacer/Spacer.component';
 import Flex from '../../layout/Flex/Flex.component';
+import PhoneImg from '../../../images/illustration-phones.svg';
 import './FeatureSection.style.scss';
 
 const FeatureSection = () => {
@@ -13,11 +14,7 @@ const FeatureSection = () => {
 			<Container>
 				<Grid className='feature-section' cols='2'>
 					<div>
-						<img
-							className='phone-img'
-							src='./images/illustration-phones.svg'
-							alt='phones'
-						/>
+						<img className='phone-img' src={PhoneImg} alt='phones' />
 					</div>
 					<Flex className='feature-textbox' flexColumn justifyCenter>
 						<Spacer right='lg'>

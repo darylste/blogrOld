@@ -1,11 +1,21 @@
+import classNames from 'classnames';
 import React from 'react';
 
 import './Grid.style.scss';
 
-const Grid = (props) => {
+const Grid = ({ cols, className, isReversed, children }) => {
 	return (
-		<div className={`grid grid-${props.cols} ${props.className}`}>
-			{props.children}
+		<div
+			className={classNames(
+				'grid',
+				`grid-${cols}`,
+				`${className ? className : ''}`,
+				{
+					gridReversed: isReversed,
+				},
+			)}
+		>
+			{children}
 		</div>
 	);
 };

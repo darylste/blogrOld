@@ -1,9 +1,12 @@
-.main-section {
-	background-image: url('../../../../public/images/section-img-1.svg');
+.section {
 	background-repeat: no-repeat;
 	background-position: right;
-}
 
-.section-img {
-	width: 90%;
+	&Reversed {
+		background-position: left;
+	}
+
+	&-img {
+		width: 90%;
+	}
 }
