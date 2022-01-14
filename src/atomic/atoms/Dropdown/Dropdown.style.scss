@@ -1,0 +1,28 @@
+@import '../../../style/variables.scss';
+
+.dropdown {
+	position: absolute;
+	background-color: $color-white;
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+	padding: 1rem 1rem;
+
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+
+	&-item {
+		font-family: $font-secondary;
+		margin: 0.75rem 2rem;
+		list-style: none;
+		cursor: pointer;
+
+		&:hover {
+			font-weight: 600;
+		}
+	}
+}
+
+.isOpen {
+	display: flex;
+}

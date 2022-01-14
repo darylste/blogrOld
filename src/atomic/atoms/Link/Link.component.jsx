@@ -3,10 +3,9 @@ import Spacer from '../../layout/Spacer/Spacer.component';
 
 import './Link.style.scss';
 
-const Link = ({ varient, text }) => {
+const Link = ({ children, varient, text }) => {
 	return (
 		<li className={`list-item list-item-${varient}`}>
-			{varient === 'nav' && <Spacer right='sm'></Spacer>}
 			<Spacer right='sm'>
 				<a
 					className={`link link-${varient}`}
@@ -17,6 +16,7 @@ const Link = ({ varient, text }) => {
 					{text}
 				</a>
 			</Spacer>
+			{children}
 		</li>
 	);
 };

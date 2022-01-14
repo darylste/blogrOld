@@ -1,20 +1,33 @@
 import React from 'react';
 import classNames from 'classnames';
+import ExpandIcon from '../../../images/icon-arrow-light.svg';
 
 import './Button.style.scss';
 
-const Button = (props) => {
+const Button = ({
+	type,
+	size,
+	text,
+	varient = 'rounded',
+	hasIcon = false,
+	onClicked,
+}) => {
 	return (
 		<button
+			onClick={onClicked}
 			className={classNames({
-				btn: true,
-				btnPrimary: props.type === 'primary',
-				btnSecondary: props.type === 'secondary',
-				btnOutline: props.type === 'outline',
-				btnSmall: props.size === 'sm',
+				btn: varient === 'rounded',
+				btnPrimary: type === 'primary',
+				btnSecondary: type === 'secondary',
+				btnOutline: type === 'outline',
+				btnSmall: size === 'sm',
+				btnNav: varient === 'nav',
 			})}
 		>
-			{props.text}
+			{text}
+			{hasIcon && (
+				<img className='expand-icon' src={ExpandIcon} alt='expand icon' />
+			)}
 		</button>
 	);
 };

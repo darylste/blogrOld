@@ -8,7 +8,7 @@ import FooterNav from '../../molecules/FooterNav/FooterNav.component';
 
 import './Footer.style.scss';
 
-const Footer = () => {
+const Footer = ({ navItems }) => {
 	return (
 		<React.Fragment>
 			<Spacer top='lg' />
@@ -17,12 +17,14 @@ const Footer = () => {
 					<Spacer top='lg' />
 					<Grid cols='4'>
 						<Logo />
-						<div>
-							<Typography type='footer-title'>Product</Typography>
-							<Spacer top='sm' btm='med'>
-								<FooterNav />
-							</Spacer>
-						</div>
+						{navItems.map((navItem) => (
+							<div key={navItem.title}>
+								<Typography type='footer-title'>{navItem.title}</Typography>
+								<Spacer top='sm' btm='med'>
+									<FooterNav dropdownItems={navItem.dropdownItems} />
+								</Spacer>
+							</div>
+						))}
 					</Grid>
 				</Container>
 			</footer>

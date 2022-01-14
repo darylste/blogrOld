@@ -1,3 +1,9 @@
 .nav {
 	display: flex;
 }
+
+.list-item-nav {
+	position: relative;
+	list-style: none;
+	cursor: pointer;
+}

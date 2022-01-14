@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from '../../atoms/Typography/Typography.component';
 import Spacer from '../../layout/Spacer/Spacer.component';
 
-const labels = {
+export const labels = {
 	intro: (
 		<React.Fragment>
 			<Typography type='subtitle'>Introducing an extensible editor</Typography>
@@ -54,4 +54,32 @@ const labels = {
 	),
 };
 
-export default labels;
+export const navItems = [
+	{
+		title: 'Product',
+		dropdownItems: [
+			{ text: 'Overview' },
+			{ text: 'Pricing' },
+			{ text: 'Marketplace' },
+			{ text: 'Features' },
+			{ text: 'Integrations' },
+		],
+	},
+	{
+		title: 'Company',
+		dropdownItems: [
+			{ text: 'About' },
+			{ text: 'Team' },
+			{ text: 'Blog' },
+			{ text: 'Careers' },
+		],
+	},
+	{
+		title: 'Connect',
+		dropdownItems: [
+			{ text: 'Contact' },
+			{ text: 'Newsletter' },
+			{ text: 'LinkedIn' },
+		],
+	},
+];

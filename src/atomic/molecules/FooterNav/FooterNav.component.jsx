@@ -3,14 +3,16 @@ import Link from '../../atoms/Link/Link.component';
 
 import './FooterNav.style.scss';
 
-const FooterNav = () => {
+const FooterNav = ({ dropdownItems = [] }) => {
 	return (
 		<ul>
-			<Link text='Overview' varient='footer' />
-			<Link text='Pricing' varient='footer' />
-			<Link text='item' varient='footer' />
-			<Link text='item' varient='footer' />
-			<Link text='item' varient='footer' />
+			{dropdownItems.map((dropdownItem) => (
+				<Link
+					key={dropdownItem.text}
+					text={dropdownItem.text}
+					varient='footer'
+				/>
+			))}
 		</ul>
 	);
 };
